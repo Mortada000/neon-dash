@@ -1,0 +1,22 @@
+{
+  "name": "NEON DASH",
+  "short_name": "NEON DASH",
+  "description": "Cyberpunk Neon Endless Runner",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0d0e15",
+  "theme_color": "#00ffff",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

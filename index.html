@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#0d0e15">
+    
+    <title>Neon Dash</title>
+    
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    
+    <div id="ui-layer">
+        
+        <!-- Toast Notifications Container -->
+        <div id="toast-container"></div>
+
+        <!-- Main Menu -->
+        <div id="menu-main" class="screen active">
+            <h1 class="title-neon">NEON DASH</h1>
+            <p class="subtitle">RUN. DASH. SURVIVE.</p>
+            <button class="btn btn-primary" id="btn-play">▶ PLAY</button>
+            <button class="btn" id="btn-achievements">🏆 ACHIEVEMENTS</button>
+            <button class="btn" id="btn-skins">👤 SKINS</button>
+            <button class="btn" id="btn-settings">⚙ SETTINGS</button>
+            <button class="btn" id="btn-tutorial">❓ HOW TO PLAY</button>
+        </div>
+
+        <!-- Achievements & Missions Menu -->
+        <div id="menu-achievements" class="screen">
+            <h2 class="title-neon" style="font-size: 3rem;">ACHIEVEMENTS & MISSIONS</h2>
+            
+            <div class="achievements-layout">
+                <div class="panel">
+                    <h3 class="panel-title text-yellow">🎯 MISSIONS</h3>
+                    <div id="missions-list" class="list-container"></div>
+                </div>
+
+                <div class="panel">
+                    <h3 class="panel-title text-cyan">🏆 ACHIEVEMENTS</h3>
+                    <div id="achievements-list" class="list-container"></div>
+                </div>
+            </div>
+
+            <button class="btn" id="btn-back-achievements">BACK</button>
+        </div>
+
+        <!-- Skins Menu -->
+        <div id="menu-skins" class="screen">
+            <h2 class="title-neon">SKINS</h2>
+            <div class="stats-box skins-stats">
+                <p>COINS: <span id="skins-total-coins">0</span></p>
+                <p>BEST: <span id="skins-best-score">0</span></p>
+            </div>
+            <div id="skins-grid" class="skins-grid"></div>
+            <button class="btn" id="btn-back-skins">BACK</button>
+        </div>
+
+        <!-- Pause Menu -->
+        <div id="menu-pause" class="screen">
+            <h2 class="title-neon">PAUSED</h2>
+            <button class="btn btn-primary" id="btn-resume">▶ RESUME</button>
+            <button class="btn" id="btn-restart-pause">↻ RESTART</button>
+            <button class="btn btn-danger" id="btn-home-pause">⌂ MAIN MENU</button>
+        </div>
+
+        <!-- Game Over Menu -->
+        <div id="menu-gameover" class="screen">
+            <h2 class="title-neon text-danger">GAME OVER</h2>
+            <div class="stats-box">
+                <p>SCORE: <span id="go-score">0</span></p>
+                <p>BEST: <span id="go-best">0</span></p>
+                <p>COINS: <span id="go-coins">0</span></p>
+            </div>
+            <button class="btn btn-primary" id="btn-restart-go">↻ RESTART</button>
+            <button class="btn btn-danger" id="btn-home-go">⌂ MAIN MENU</button>
+        </div>
+
+        <!-- Settings Menu -->
+        <div id="menu-settings" class="screen">
+            <h2 class="title-neon">SETTINGS</h2>
+            <div class="setting-item">
+                <label>SOUND</label>
+                <button class="btn-toggle" id="btn-sound-toggle">ON</button>
+            </div>
+            <div class="setting-item">
+                <label>VOLUME</label>
+                <input type="range" id="volume-slider" min="0" max="100" value="50">
+            </div>
+            <button class="btn" id="btn-back-settings">BACK</button>
+        </div>
+
+        <!-- Tutorial Menu -->
+        <div id="menu-tutorial" class="screen">
+            <h2 class="title-neon">HOW TO PLAY</h2>
+            <div class="tutorial-content">
+                <p><strong>[ SPACE ]</strong> : JUMP</p>
+                <p><strong>[ SHIFT ]</strong> : DASH</p>
+                 <p><strong>[ E ]</strong> : OVERDRIVE</p>
+                <br>
+                <p><span class="highlight-yellow">COINS</span>: Collect for Score & Energy.</p>
+                <p><span class="highlight-red">OBSTACLES</span>: Avoid, or DESTROY during Overdrive!</p>
+                <p><strong>[ P ] or [ ESC ]</strong> : PAUSE GAME</p>
+            </div>
+            <button class="btn" id="btn-back-tutorial">BACK</button>
+        </div>
+
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
