@@ -4,8 +4,8 @@
 
 🕹️ **[العب NEON DASH الآن مباشر](https://mortada000.github.io/neon-dash/)**
 
-![Neon Dash Gameplay](<img width="2537" height="1331" alt="لقطة" src="https://github.com/user-attachments/assets/7c23b257-4f11-437d-a0bf-f6717f06b774" />
-)
+<img width="2537" height="1331" alt="لقطة" src="https://github.com/user-attachments/assets/f745f4c8-c698-41a6-a333-4c6bffaebcd3" />
+
 
 ## 📖 القصة
 مرحباً بك في شوارع عام 2084 المضاءة بالنيون. أنت عدّاء هارب في مدينة "سايبربانك" لا ترحم. ابقَ على قيد الحياة وتجاوز العقبات اللانهائية، اجمع عملات الطاقة، وفعّل نظام الـ "Overdrive" الخارق لتحطيم الحواجز. إلى أي مدى يمكنك الركض قبل أن تلحق بك المدينة؟
